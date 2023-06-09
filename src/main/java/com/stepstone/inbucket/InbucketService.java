@@ -40,6 +40,6 @@ interface InbucketService {
     @DELETE("api/v1/mailbox/{name}")
     Call<String> deleteMailbox(@Path("name") String mailboxName);
 
-    @DELETE("api/v1/mailbox/{name}/{id}/source")
+    @DELETE("api/v1/mailbox/{name}/{id}")
     Call<String> deleteMessage(@Path("name") String mailboxName, @Path("id") String messageId);
 }
